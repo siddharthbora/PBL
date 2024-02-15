@@ -45,18 +45,33 @@ button {
     margin-top: 20px;
 }
 
-button {
-    background-color: #45a049;
-}
 
 .horizontal-line {
     border-top: 1px solid #555;
     margin: 20px 0;
 }
 
+#TCSacknowledgmentContainer {
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
 
+.form-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-column .form-field {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
 
 form {
-    width:50%;
+    width: 70%;
     margin: 0 auto;
 }
