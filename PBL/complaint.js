@@ -1,3 +1,7 @@
+document.getElementById("logoutButton").addEventListener("click", function() {
+    // Redirect to login.html
+    window.location.href = "login.html";
+});
 // Get elements
 const complaintType = document.getElementById('complaintType');
 const category = document.getElementById('category');
