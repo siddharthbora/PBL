@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
             calculateTotalAmount();
         });
     });
-
+    document.getElementById("logoutButton").addEventListener("click", function() {
+        // Redirect to login.html
+        window.location.href = "login.html";
+    });
     // Calculate total bill amount
     function calculateTotalAmount() {
         let totalAmount = 0;

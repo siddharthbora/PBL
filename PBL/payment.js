@@ -54,9 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Logout functionality
     const logoutButton = document.getElementById('logoutButton');
     logoutButton.addEventListener('click', function() {
-        // Clear the username from localStorage
-        localStorage.removeItem('username');
-        // Redirect to the login page
         window.location.href = 'login.html'; // Change 'login.html' to your actual login page URL
     });
 
