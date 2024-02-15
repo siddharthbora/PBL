@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #fff;
+    margin-top: 5px;
+}
+
+button {
+    width: 49%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #45a049;
+}
+
+.horizontal-line {
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+#TCSacknowledgmentContainer {
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.form-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-column .form-field {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}

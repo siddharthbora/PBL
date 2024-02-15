@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h2>Login</h2>
+<form id="Login">
+    <div class="form-section">
+        <h3>Login Details</h3>
+        <div class="form-column">
+            <div class="form-field">
+                <label for="TCSuserId">User ID</label>
+                <input type="text" id="TCSuserId" name="TCSuserId" minlength="5" maxlength="20" required placeholder="User ID">
+            </div>
+            <br>
+            <div class="form-field">
+                <label for="Login">Password</label>
+                <input type="password" id="Login" name="Login" maxlength="30" required placeholder="Password">
+            </div>
+        </div>
+    </div>
+    <button type="submit">Login</button>
+    <button type="reset" class="btn-reset">Reset</button>
+</form>
+
+<script src="./login.js"></script>
+</body>
+</html>

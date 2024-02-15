@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumer Registration</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h2>Consumer Registration</h2>
+<form id="TCSregistrationForm">
+    <div class="form-section">
+        <h3>Customer Details</h3>
+        <div class="form-column">
+            <div class="form-field">
+                <label for="TCSconsumerId">Consumer ID (13 digits only)</label>
+                <input type="text" id="TCSconsumerId" name="TCSconsumerId" maxlength="13" required placeholder="Consumer ID (13 digits only)">
+            </div>
+            <div class="form-field">
+                <label for="TCSbillNumber">Bill Number (last 5 digits only)</label>
+                <input type="text" id="TCSbillNumber" name="TCSbillNumber" maxlength="5" required pattern="\d{5}" placeholder="last 5 digits only">
+            </div>
+        </div>
+    </div>
+    <div class="form-section">
+        <h3>User Details</h3>
+        <div class="form-column">
+            <div class="form-field">
+                <label for="TCStitle">Title</label>
+                <select id="TCStitle" name="TCStitle" required>
+                    <option value="">Select</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="TCScustomerName">Customer Name</label>
+                <input type="text" id="TCScustomerName" name="TCScustomerName" maxlength="50" required placeholder="Customer Name">
+            </div>
+            <div class="form-field">
+                <label for="TCSe-mail">Email</label>
+                <input type="email" id="TCSe-mail" name="TCSe-mail" required placeholder="Email">
+            </div>
+            <div class="form-field">
+                <label for="TCSmobileNumber">Mobile number</label>
+                <select id="TCScountryCode" name="TCScountryCode" required>
+                    <option value="">Select Country Code</option>
+                    <option value="+1">+1</option>
+                    <option value="+91">+91</option>
+                </select>
+                <input type="text" id="TCSmobileNumber" name="TCSmobileNumber" maxlength="10" required placeholder="Mobile Number">
+            </div>
+        </div>
+    </div>
+    <div class="form-section">
+        <h3>Login Details</h3>
+        <div class="form-column">
+            <div class="form-field">
+                <label for="TCSuserId">User ID</label>
+                <input type="text" id="TCSuserId" name="TCSuserId" minlength="5" maxlength="20" required placeholder="User ID">
+            </div>
+            <div class="form-field">
+                <label for="TCSpassword">Password</label>
+                <input type="password" id="TCSpassword" name="TCSpassword" maxlength="30" required placeholder="Password">
+            </div>
+            <div class="form-field">
+                <label for="TCSconfirmPassword">Confirm Password</label>
+                <input type="password" id="TCSconfirmPassword" name="TCSconfirmPassword" maxlength="30" required placeholder="Confirm Password">
+            </div>
+        </div>
+    </div>
+    <button type="submit">Register</button>
+    <button type="reset" class="btn-reset">Reset</button>
+</form>
+
+<div id="TCSacknowledgmentContainer"></div>
+
+<script src="./script.js"></script>
+</body>
+</html>

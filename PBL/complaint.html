@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Complaint/Service</title>
+<link rel="stylesheet" href="complaint.css">
+</head>
+<body>
+<h1>Register Complaint/Service</h1>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="./paybill.html" id="homeLink" >Home</a></li>
+            <li><a href="./paybill.html" id="payBillLink">Pay Bill</a></li>
+            <li><a href="./complaint.html" id="registerComplaintLink" class="selected">Register Complaint</a></li>
+            <li><a href="./complaintStatus.html" id="complaintStatusLink" >Complaint Status</a></li>
+        </ul>
+        <p style="text-align: left; padding-left: 35%;" id="welcomeMessage">Welcome User1</p>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <br>
+    <form id="complaintForm">
+        <div class="form-section">
+            <label for="complaintType">Complaint/Service type:</label>
+            <select id="complaintType">
+                <option value="billing">Billing related</option>
+                <option value="voltage">Voltage related</option>
+                <option value="disruption">Frequent disruption</option>
+                <option value="streetLight">Street light related</option>
+                <option value="pole">Pole related</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="category">Category:</label>
+            <select id="category">
+                <!-- Options will be populated based on the selected complaint type using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="contactPerson">Contact Person:</label>
+            <input requried type="text" id="contactPerson">
+        </div>
+
+        <div class="form-section">
+            <label for="landmark">Landmark:</label>
+            <input requried type="text" id="landmark">
+        </div>
+
+        <div class="form-section">
+            <label for="consumerNo">Consumer No:</label>
+            <input requried type="text" id="consumerNo" maxlength="13">
+        </div>
+
+        <div class="form-section">
+            <label for="problemDescription">Problem description:</label>
+            <textarea id="problemDescription"></textarea>
+        </div>
+
+        <div class="form-section">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input requried type="text" id="mobileNumber" maxlength="10">
+        </div>
+
+        <div class="form-section">
+            <label for="address">Address:</label>
+            <textarea id="address"></textarea>
+        </div>
+
+        <div class="form-section">
+            <button type="submit" id="submitComplaint">Submit Complaint</button>
+            <button type="button" id="cancelComplaint">Cancel</button>
+        </div>
+    </form>
+</div>
+<div id="successScreen" style="display: none;">
+    <h2>Success!</h2>
+    <p>Your complaint has been successfully registered.</p>
+    <p>Your complaint ID is: <span id="complaintId"></span></p>
+</div>
+<script src="complaint.js"></script>
+
+</body>
+</html>

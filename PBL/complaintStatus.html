@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complaint Status</title>
+<link rel="stylesheet" href="complaintStatus.css">
+</head>
+<body>
+<h1>Complaint Status</h1>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="./paybill.html" id="homeLink" >Home</a></li>
+            <li><a href="./paybill.html" id="payBillLink">Pay Bill</a></li>
+            <li><a href="./complaint.html" id="registerComplaintLink" >Register Complaint</a></li>
+            <li><a href="./complaintStatus.html" id="complaintStatusLink" class="selected">Complaint Status</a></li>
+        </ul>
+        <p style="text-align: left; padding-left: 35%;" id="welcomeMessage">Welcome User1</p>
+        <button id="logoutButton">Logout</button>
+    </div>
+    
+    <div id="checkComplaintForm">
+        <h2>CHECK YOUR COMPLAINT STATUS</h2>
+        <form id="complaintForm">
+            <label for="complaintNumber">Complaint Number:</label>
+            <input type="text" id="complaintNumber" name="complaintNumber" required>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+        </form>
+    </div>
+</div>
+
+<script src="complaintStatus.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="paybill.css">
+</head>
+<body>
+
+<h1>Quick Ebill</h1>
+
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="#" id="homeLink" >Home</a></li>
+            <li><a href="#" id="payBillLink" class="selected">Pay Bill</a></li>
+            <li><a href="./complaint.html" id="registerComplaintLink">Register Complaint</a></li>
+            <li><a href="./complaintStatus.html" id="complaintStatusLink">Complaint Status</a></li>
+        </ul>
+        <p style="text-align: left; padding-left: 35%;" id="welcomeMessage">Welcome User1</p>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <div id="content">
+        <table id="billsTable">
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>Customer Number</th>
+                    <th>Due Amount</th>
+                    <th>Payable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="bill1">
+                    <td><input type="checkbox" class="billCheckbox" id="billCheckbox1"></td>
+                    <td>204786197</td>
+                    <td>$50</td>
+                    <td>$20</td>
+                </tr>
+                <tr id="bill2">
+                    <td><input type="checkbox" class="billCheckbox" id="billCheckbox2"></td>
+                    <td>92864190</td>
+                    <td>$100</td>
+                    <td>$30</td>
+                </tr>
+                <tr id="bill3">
+                    <td><input type="checkbox" class="billCheckbox" id="billCheckbox3"></td>
+                    <td>7816249817</td>
+                    <td>$150</td>
+                    <td>$40</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="totalAmount">Total Amount: $0</div>
+        <button id="paymentButton">Proceed to Pay</button>
+    </div>
+</div>
+
+<script src="paybill.js"></script>
+
+</body>
+</html>
