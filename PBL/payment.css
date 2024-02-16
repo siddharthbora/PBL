@@ -42,7 +42,8 @@ h1 {
     color: #fff;
 }
 
-#menu button {
+#menu button,
+#tranasaction_table button {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
